@@ -10,8 +10,7 @@ import java.util.regex.Pattern;
 import static main.java.hr.java.covidportal.main.Glavna.BROJ_LIJECNIKA;
 
 public class MetodeZaValidaciju {
-
-    // DRUGI DODATNI ZADATAK
+    
     protected static String proveraIstogDomaZdravlja(Scanner scan, Lijecnik[] lijecnici) {
 
         boolean postojiDomZdravlja;
@@ -66,7 +65,7 @@ public class MetodeZaValidaciju {
 
     protected static Integer provjeraBrojaSaListe(Scanner scan, Integer granica) {
 
-        Integer odabir = 0;
+        Integer odabir;
         do {
             odabir = MetodeZaValidaciju.provjeraNegativnogIntegera(scan);
             if (odabir < 0 || odabir > granica)
